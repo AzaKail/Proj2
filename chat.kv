@@ -1,0 +1,28 @@
+<ChatScreen>:
+    name: 'chat'
+    BoxLayout:
+        orientation: 'vertical'
+
+        MDLabel:
+            id: welcome_label
+            text: "Вы вошли как: "
+            halign: "center"
+            size_hint_y: None
+            height: 50
+
+        MDTextField:
+            id: search_input
+            hint_text: "Введите email для поиска"
+            size_hint_y: None
+            height: 50
+            multiline: False
+            on_text_validate: root.search_users()
+
+        ScrollView:
+            MDList:
+                id: user_list
+
+        MDRoundFlatButton:
+            text: "Назад"
+            pos_hint: {"center_x": 0.5}
+            on_press: app.root.current = 'login'

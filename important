@@ -1,0 +1,8 @@
+1) maksmatuv@gmail.com
+000000
+
+key
+# Настройки Supabase
+url = "https://olzyhnpnhadusvrryawv.supabase.co"
+key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9senlobnBuaGFkdXN2cnJ5YXd2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzA2NjAwNzAsImV4cCI6MjA0NjIzNjA3MH0.pXJHX1HXljvAV2X1Q2cHNNfC7b6M7mtu9XuH4Tga_bg"  # Замените на ваш ключ
+supabase: Client = create_client(url, key)
